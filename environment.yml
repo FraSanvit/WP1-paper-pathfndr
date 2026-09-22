@@ -1,0 +1,22 @@
+name: pathfndr
+channels:
+    - conda-forge
+dependencies: # conda env export --from-history
+    - python=3.11
+    - pandas
+    - numpy
+    - matplotlib
+    - seaborn
+    - xarray
+    - scipy
+    - pyyaml
+    - pip
+    - ipykernel
+    - ca-certificates
+    - certifi
+    - openssl
+    - openpyxl
+    - pre-commit
+    - black
+    # - pip:
+    #     - friendly-data

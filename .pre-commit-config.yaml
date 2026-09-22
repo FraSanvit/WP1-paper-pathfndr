@@ -1,0 +1,31 @@
+exclude: 'docs|node_modules|migrations|.git|.tox|post_processing'
+default_stages: [commit]
+fail_fast: true
+
+repos:
+-   repo: https://github.com/pre-commit/pre-commit-hooks
+    rev: v4.4.0
+    hooks:
+    -   id: trailing-whitespace
+    -   id: check-yaml
+    -   id: end-of-file-fixer
+    files: (^|/)a/.+\.(py|html|sh|css|js)$
+
+-   repo: https://github.com/astral-sh/ruff-pre-commit
+    # Ruff version.
+    rev: v0.1.6
+    hooks:
+        # Run the linter.
+    -   id: ruff
+        types_or: [ python, pyi, jupyter ]
+        args: [ --fix ]
+        # Run the formatter.
+    -   id: ruff-format
+        types_or: [ python, pyi, jupyter ]
+-   repo: local
+    hooks:
+    -   id: black
+        name: black
+        entry: black
+        language: python
+        types: [python]

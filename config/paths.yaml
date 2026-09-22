@@ -1,0 +1,17 @@
+# Local file-system paths used by src/config.py.
+# Edit these to match your machine; this file is tracked so the *keys* stay in
+# sync across the team, even though the values are machine-specific.
+#
+# Paths can be absolute (e.g. "D:/Nexus-e") or relative to the repo root
+# (e.g. "data/secmod").
+
+# Raw Nexus-e Dash export (HAR/JSON files), read by postprocess.create_results().
+nexus_results_path: "D:/Nexus-e"
+
+# Raw SecMOD Excel exports, read by postprocess.friendly_secmod_results().
+secmod_results_path: "data/secmod"
+
+# Repo-relative folders for inputs/outputs.
+data_dir: "data"
+results_dir: "results"
+figures_dir: "figures"

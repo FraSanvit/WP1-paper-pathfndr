@@ -216,3 +216,11 @@ __marimo__/
 
 # Streamlit
 .streamlit/secrets.toml
+
+# Project data & generated outputs (raw/processed data, results, figures).
+# Folder structure under data/ is kept via .gitkeep files; contents are not tracked.
+data/**
+!data/**/
+!**/.gitkeep
+results/
+figures/
