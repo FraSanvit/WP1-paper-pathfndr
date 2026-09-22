@@ -325,12 +325,11 @@ def friendly_secmod_results(tol=1e-8):
             combined_df["values"].abs() >= tol
         ]
 
-        # units
-        combined_df["units"] = (
-            combined_df["variable"]
-            .map(cnf.UNIT_MAPPING_SECMOD)
-            .fillna("TWh")
-        )
+        # units (only "output" files carry a "variable" column to map from)
+        if sheet_col == "variable":
+            combined_df["units"] = combined_df["variable"].map(cnf.UNIT_MAPPING_SECMOD).fillna("TWh")
+        else:
+            combined_df["units"] = "TWh"
 
         combined_df = combined_df[col_order]
 

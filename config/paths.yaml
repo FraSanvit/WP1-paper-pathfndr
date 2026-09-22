@@ -6,7 +6,7 @@
 # (e.g. "data/secmod").
 
 # Raw Nexus-e Dash export (HAR/JSON files), read by postprocess.create_results().
-nexus_results_path: "D:/Nexus-e"
+nexus_results_path: "data/nexus-e/scenario_results"
 
 # Raw SecMOD Excel exports, read by postprocess.friendly_secmod_results().
 secmod_results_path: "data/secmod"
