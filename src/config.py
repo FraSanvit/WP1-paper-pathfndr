@@ -27,6 +27,7 @@ FIGURES_DIR = _resolve_path("figures_dir")
 RESULTS_NEXUS_DIR = RESULTS_DIR / "nexus-e"
 RESULTS_SECMOD_DIR = RESULTS_DIR / "secmod"
 DATA_EP2050_DIR = DATA_DIR / "ep2050+"
+DATA_NEXUS_FLEX_DIR = DATA_DIR / "nexus-e" / "flexibility_resources"
 
 SCENARIO_NAME = "EV_HP_flexibility_visualisation"
 
