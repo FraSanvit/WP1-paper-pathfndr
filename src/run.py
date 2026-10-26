@@ -514,4 +514,3 @@ scenario_list = [
 ]
 
 plot.shift_capacity_boxplots(scenario_list, "high_ntc")
-
